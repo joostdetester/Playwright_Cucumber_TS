@@ -1,12 +1,17 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 
 import { expect } from "@playwright/test";
-import { fixture } from "../../hooks/pageFixture";
+import { fixture } from "../../../hooks/pageFixture";
 
 setDefaultTimeout(60 * 1000 * 2)
 
-Given('User navigates to the application', async function () {
-    await fixture.page.goto(process.env.BASEURL);
+Given('User navigates to the ATS application', async function () {
+    await fixture.page.goto(process.env.BASEURL_ATS);
+    fixture.logger.info("Navigated to the application")
+})
+
+Given('User navigates to the CRM application', async function () {
+    await fixture.page.goto(process.env.BASEURL_CRM);
     fixture.logger.info("Navigated to the application")
 })
 

@@ -1,16 +1,20 @@
 {
     "default": {
-        "tags": "@test",
+        "tags": "@e2e",
         "formatOptions": {
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/"
+            "src/test/features/",
+            "src/test/features/ATS",
+            "src/test/features/CRM"
         ],
         "publishQuiet": true,
         "dryRun": false,
         "require": [
             "src/test/steps/*.ts",
+            "src/test/steps/ATS/*.ts",
+            "src/test/steps/CRM/*.ts",
             "src/hooks/hooks.ts"
         ],
         "requireModule": [
@@ -29,9 +33,11 @@
             "snippetInterface": "async-await"
         },
         "publishQuiet": true,
-        "dryRun": false,
+        "dryRun": true,
         "require": [
             "src/test/steps/*.ts",
+            "src/test/steps/ATS/*.ts",
+            "src/test/steps/CRM/*.ts",
             "src/hooks/hooks.ts"
         ],
         "requireModule": [

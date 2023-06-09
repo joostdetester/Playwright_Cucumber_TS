@@ -3,15 +3,15 @@ const report = require("multiple-cucumber-html-reporter");
 report.generate({
     jsonDir: "test-results",
     reportPath: "test-results/reports/",
-    reportName: "Playwright Automation Report",
-    pageTitle: "BookCart App test report",
+    reportName: "RGN E2E Automation Report",
+    pageTitle: "Randstadgroep NL E2Etest report",
     displayDuration: false,
     metadata: {
         browser: {
             name: "chrome",
             version: "112",
         },
-        device: "Koushik - PC",
+        device: "Joost - PC",
         platform: {
             name: "Windows",
             version: "10",
@@ -20,7 +20,7 @@ report.generate({
     customData: {
         title: "Test Info",
         data: [
-            { label: "Project", value: "Book Cart Application" },
+            { label: "Project", value: "ATS & CRM" },
             { label: "Release", value: "1.2.3" },
             { label: "Cycle", value: "Smoke-1" }
         ],

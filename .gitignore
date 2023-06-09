@@ -9,3 +9,6 @@ assets
 features
 @rerun.txt
 index.html
+/test-results/
+/playwright-report/
+/playwright/.cache/
